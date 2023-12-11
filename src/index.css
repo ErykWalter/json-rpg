@@ -60,6 +60,7 @@ button:focus-visible {
 .card {
     border: solid 2px grey;
     border-radius: 1rem;
+    margin: 2rem;
     padding: 1rem;
     display: flex;
     flex-flow: column nowrap;
@@ -67,12 +68,9 @@ button:focus-visible {
     align-items: center;
 }
 
-.card h1 {
-    text-justify: auto;
-}
-
 .card p {
     margin: 5px;
+    content: 'center';
 }
 
 .card h1 {
@@ -80,8 +78,17 @@ button:focus-visible {
     margin-bottom: 0;
 }
 
+.card button {
+    margin: 0.5rem;
+}
+
 ul {
     list-style-type: none;
+    /* center buttons inside ul */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (prefers-color-scheme: light) {
